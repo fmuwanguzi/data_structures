@@ -13,3 +13,19 @@ const reverseList = function(head){
     }
     return prev;
 };
+
+const nodeThree = {
+    next: null,
+    value: 3
+}
+const nodeTwo = {
+    next: nodeThree,
+    value: 2
+}
+const nodeOne = {
+    next: nodeTwo,
+    value: 1
+}
+
+const result = reverseList(nodeOne)
+console.log(result)
